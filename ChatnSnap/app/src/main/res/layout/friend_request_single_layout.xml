@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/frined_request_user_image"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/default_image"
+
+        />
+
+    <TextView
+        android:id="@+id/frined_request_display_username"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+
+        android:text="Username"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/frined_request_user_image"
+        android:layout_marginTop="13dp" />
+
+    <Button
+        android:layout_marginLeft="30dp"
+        android:text="Open Profile To Respond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/friend_request_decider_button"
+        android:layout_marginTop="12dp"
+android:background="@drawable/message_text_single_style"
+        android:layout_below="@+id/frined_request_display_username"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
